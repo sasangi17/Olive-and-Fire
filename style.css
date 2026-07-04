@@ -609,3 +609,112 @@ transform:translateY(-10px);
     transform:translateY(-10px);
     box-shadow:0 15px 40px rgba(212,168,79,.18);
 }
+
+.about-hero{
+    width:85%;
+    margin:0 auto;
+    padding-top:140px;
+    padding-bottom:80px;
+}
+
+.about-hero h1{
+  text-align:left;
+  margin-bottom:50px;
+}
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:start;
+    margin-top:50px;
+}
+.about-left{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-start;
+}
+.about-left img{
+    width:80%;
+    max-width:550px;
+    height:720px;
+    object-fit:cover;
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+    transition:.3s;
+    margin: 45px 25% auto;
+}
+.about-left img:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(212,168,79,.18);
+}
+.about-right{
+    display:flex;
+    flex-direction:column;
+    max-height: 700px;
+}
+.about-right p{
+    color:#ddd;
+    font-size:25px;
+    line-height:1.8;
+    margin:12px 10px 0;
+    font-family:'Cormorant Garamond',serif;
+    clear:both;
+    font-weight: 700;
+}
+.team-chefs{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.chef-content h1{
+    font-size:65px;
+    color:#FF9D00;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:400;
+}
+.chef-content h2{
+    color: #F8C266;
+    font-family:'Cormorant Garamond',serif;
+    font-size: 40px;
+    font-weight:500 ;
+}
+.chef-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.chefs{
+    position: relative;
+    overflow: hidden;
+}
+.chefs img{
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+.chefs p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: #ccc;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 2;
+}
+.chefs span{
+    font-size: 18px;
+    font-weight: 400;
+}
+.chefs::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0));
+    border-radius: 15px;
+}
