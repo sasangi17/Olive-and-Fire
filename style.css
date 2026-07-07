@@ -38,12 +38,9 @@ body{
     margin:auto;
     display:grid;
     grid-template-columns:460px 1fr;
-    gap:45px;
+    gap:40px;
     align-items:center;
 }
-
-/* Left Side */
-
 .login-info-left{
     display:flex;
     justify-content:center;
@@ -52,7 +49,7 @@ body{
 .login-form{
     width:100%;
     border:1px solid #c89a3d;
-    padding:50px 40px;
+    padding:40px 30px;
     background:#000;
 }
 
@@ -73,8 +70,8 @@ body{
 .login-form label{
     display:block;
     color:#f0c76b;
-    font-size:15px;
-    margin-bottom:8px;
+    font-size:18px;
+    margin-bottom:5px;
 }
 
 .login-form input{
@@ -85,7 +82,7 @@ body{
     border-radius:30px;
     background:#4b3920;
     color:#fff;
-    padding:0 22px;
+    padding:0 20px;
     margin-bottom:22px;
     font-size:15px;
 }
@@ -97,7 +94,7 @@ body{
 .login{
     display:block;
     width:180px;
-    height:48px;
+    height:45px;
     margin:25px auto;
     border:none;
     border-radius:30px;
