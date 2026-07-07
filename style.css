@@ -795,3 +795,116 @@ transform:translateY(-10px);
     font-size: 15px;
     line-height: 1.6;
 }
+.service-hero{
+    width:85%;
+    margin:auto;
+    padding: 140px 0 80px;
+}
+.service-content-left h3{
+    color: #FF9D00;
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 50px;
+    padding: 20px;
+    margin: 25px 0 15px;
+}
+.service-content-left ul{
+    color: #f6d691;
+    gap: 10px;
+    padding: 20px;
+    line-height: 1.8;
+}
+.service-content-left p{
+    color: #f6d691;
+    line-height: 1.5;
+    margin-top: 10px;
+    
+}
+.service-content-left img{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.service-content{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 70px;
+    align-items: start;
+}
+.service-content h1{
+    font-family: "Great Vibes",cursive;
+    font-size: 70px;
+    color: #D9A441;
+    text-align:left;
+    margin-bottom:50px;
+}
+.service-content-right{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-start;
+}
+.service-form{
+    display:flex;
+    flex-direction:column;
+}
+.service-form label{
+    color: #D9A441;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+.service-form input,
+.service-form textarea{
+    width: 100%;
+    background:#302514;
+    border: 1px solid #8b6a2d;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 14px;
+    outline: none;
+    font-size: 15px;
+}
+.service-form textarea{
+    resize: none;
+}
+.row{
+    display: flex;
+    gap: 20px;
+}
+.field{
+    flex: 1;
+}
+.time-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+.time-grid button{
+    background: #302514;
+    color: #ddd;
+    border-radius: 1px solid #8b6a2d;
+    border-radius: 12px;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.time-grid button:hover{
+    background:#D9A441;
+    color: #000;
+}
+.reservation_btn{
+    margin-top: 35px;
+    width: 100%;
+    background: #D9A441;
+    color: #000;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+.reservation_btn:hover{
+    transform: translateY(-4px);
+    background: #f2c34d;
+}
