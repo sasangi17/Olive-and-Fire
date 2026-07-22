@@ -26,17 +26,31 @@ body{
     box-sizing:border-box;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
+.login-content{
+    width:100%;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:55% 45%;
+    align-items:center;
     background:#000;
-    color:#fff;
 }
 
+.login-info-left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+}
 
+.login-info-right{
+    height:100vh;
+}
 
 .login-form{
     width:100%;
+    max-width:600px;
     border:1px solid #c89a3d;
+    border-radius:30px;
     padding:40px 30px;
     background:#000;
 }
@@ -224,6 +238,8 @@ body{
 }
 
 }
+
+
 .logoutBtn {
     background: transparent;
     border: 1px solid #F8C266;
