@@ -64,17 +64,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const result = await response.json();
 
-                alert(result.message);
+if (result.success) {
 
-                if (result.success) {
+    // Send booking email using Web3Forms
+    const emailData = new FormData();
 
-                    bookingForm.reset();
+    emailData.append(
+        "access_key",
+        "b3b86f65-1789-47c8-9165-8c920e3c997c"
+    );
 
-                    timeButtons.forEach(btn => btn.classList.remove("active"));
+    emailData.append("from_name", data.fullname);
+    emailData.append("email", data.email);
+    emailData.append("subject", "New Table Reservation");
+    emailData.append(
+        "message",
+`A new reservation has been made.
 
-                    timeInput.value = "";
+Full Name: ${data.fullname}
 
-                }
+Email: ${data.email}
+
+Date: ${data.date}
+
+Guests: ${data.guests}
+
+Time: ${data.time}
+
+Occasion: ${data.occasion}
+
+Special Request:
+${data.note}`
+    );
+
+    emailData.append("replyto", data.email);
+
+    const emailResponse = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+            method: "POST",
+            body: emailData
+        }
+    );
+
+    const emailResult = await emailResponse.json();
+
+console.log("Booking Web3Forms Response:", emailResult);
+
+if(emailResult.success){
+
+    alert("Reservation confirmed successfully!");
+
+}
+else{
+
+    alert("Reservation saved, but email failed.");
+
+}
+
+}
 
             } catch (err) {
 

@@ -60,15 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const emailResult = await emailResponse.json();
 
-console.log("Web3Forms Status:", emailResponse.status);
-console.log("Web3Forms Response:", emailResult);
+                    console.log("Web3Forms Status:", emailResponse.status);
+                    console.log("Web3Forms Response:", emailResult);
 
-if (emailResult.success) {
-    alert("Message sent successfully!");
-    contactForm.reset();
-} else {
-    alert("Saved to database but email failed.\n\n" + emailResult.message);
-}
+            if (emailResult.success) {
+                alert("Message sent successfully!");
+                contactForm.reset();
+                } else {
+                   alert("Saved to database but email failed.\n\n" + emailResult.message);
+                }
 
 
                 }
