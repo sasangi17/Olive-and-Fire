@@ -78,23 +78,17 @@ if (result.success) {
     emailData.append("email", data.email);
     emailData.append("subject", "New Table Reservation");
     emailData.append(
-        "message",
-`A new reservation has been made.
+        "message",`A new reservation has been made.
 
-Full Name: ${data.fullname}
+           Full Name: ${data.fullname}
+           Email: ${data.email}
+           Date: ${data.date}
+           Guests: ${data.guests}
+           Time: ${data.time}
+           Occasion: ${data.occasion}
 
-Email: ${data.email}
-
-Date: ${data.date}
-
-Guests: ${data.guests}
-
-Time: ${data.time}
-
-Occasion: ${data.occasion}
-
-Special Request:
-${data.note}`
+       Special Request:
+    ${data.note}`
     );
 
     emailData.append("replyto", data.email);
@@ -109,20 +103,20 @@ ${data.note}`
 
     const emailResult = await emailResponse.json();
 
-console.log("Booking Web3Forms Response:", emailResult);
+    console.log("Booking Web3Forms Response:", emailResult);
 
-if(emailResult.success){
+           if(emailResult.success){
 
-    alert("Reservation confirmed successfully!");
+              alert("Reservation confirmed successfully!");
 
-}
-else{
+            }
+         else{
 
-    alert("Reservation saved, but email failed.");
+              alert("Reservation saved, but email failed.");
 
-}
+             }
 
-}
+        }
 
             } catch (err) {
 
