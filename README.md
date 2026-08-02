@@ -206,6 +206,6 @@ The project was tested using:
 
 **Sasangi Samadara**
 
-Computer Science Undergraduate
+Full stack developer
 
 ---
