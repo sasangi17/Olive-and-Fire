@@ -6,7 +6,7 @@ A modern restaurant website developed using **HTML, CSS, JavaScript, Node.js, Ex
 
 ## 📌 Project Overview
 
-Olive & Fire is a restaurant website designed to provide customers with information about the restaurant and its services. The website includes user authentication, table reservation, contact functionality, and backend data storage using SQLite.
+Olive & Fire is a restaurant website designed to provide customers with information about the restaurant and its services. The website includes user authentication, table reservation, contact functionality and backend data storage using SQLite.
 
 ---
 
@@ -31,8 +31,8 @@ Olive & Fire is a restaurant website designed to provide customers with informat
 ## 🛠️ Technologies Used
 
 ### Frontend
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ### Backend
@@ -45,7 +45,6 @@ Olive & Fire is a restaurant website designed to provide customers with informat
 ### Libraries & Packages
 - bcryptjs
 - express-session
-- sqlite3
 - cors
 
 ### Third-Party Service
